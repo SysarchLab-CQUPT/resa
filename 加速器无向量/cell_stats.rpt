@@ -1,0 +1,92 @@
+12. Printing statistics.
+
+=== PEArray ===
+
+        +----------Local Count, excluding submodules.
+        | 
+   202434 wires
+   205108 wire bits
+   202434 public wires
+   205108 public wire bits
+       12 ports
+     2686 port bits
+   182085 cells
+     1946   AND2_X1
+       28   AND2_X2
+      358   AND3_X1
+        1   AND3_X2
+      117   AND4_X1
+        1   AND4_X2
+        1   AOI211_X2
+     9657   AOI21_X1
+       50   AOI21_X2
+       25   AOI21_X4
+     1691   AOI221_X1
+       60   AOI221_X2
+      269   AOI222_X1
+        2   AOI222_X2
+     5013   AOI22_X1
+       15   AOI22_X2
+        2   AOI22_X4
+    23383   BUF_X1
+       32   BUF_X16
+     6224   BUF_X2
+        1   BUF_X32
+     4054   BUF_X4
+     1045   BUF_X8
+      902   CLKBUF_X1
+       14   CLKBUF_X2
+     1894   CLKBUF_X3
+    10186   DFFR_X1
+        2   DFFR_X2
+      333   DFF_X1
+       93   DFF_X2
+     8350   FA_X1
+     4228   HA_X1
+    14886   INV_X1
+        3   INV_X16
+      372   INV_X2
+       74   INV_X4
+       58   INV_X8
+      576   LOGIC0_X1
+    21634   MUX2_X1
+    18670   NAND2_X1
+       63   NAND2_X2
+       97   NAND2_X4
+     2551   NAND3_X1
+       16   NAND3_X2
+        2   NAND3_X4
+      568   NAND4_X1
+       23   NAND4_X2
+        6   NAND4_X4
+     7936   NOR2_X1
+      127   NOR2_X2
+      129   NOR2_X4
+     2175   NOR3_X1
+       23   NOR3_X2
+        5   NOR3_X4
+      680   NOR4_X1
+       87   NOR4_X2
+       22   NOR4_X4
+    16023   OAI21_X1
+       56   OAI21_X2
+       25   OAI21_X4
+     2684   OAI221_X1
+        8   OAI221_X2
+      301   OAI222_X1
+     4751   OAI22_X1
+        6   OAI22_X2
+       61   OAI33_X1
+     2703   OR2_X1
+       21   OR2_X2
+        6   OR2_X4
+     1142   OR3_X1
+        1   OR3_X2
+       89   OR4_X1
+        1   OR4_X2
+        1   OR4_X4
+     2815   XNOR2_X1
+       59   XNOR2_X2
+      546   XOR2_X1
+       26   XOR2_X2
+

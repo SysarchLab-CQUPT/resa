@@ -1,0 +1,456 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.60+88 (git sha1 35321cd29, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `synth_area.ys' --
+
+1. Executing Verilog-2005 frontend: 6_final.v
+Parsing Verilog input from `6_final.v' to AST representation.
+verilog frontend filename 6_final.v
+Generating RTLIL representation for module `\PEArray'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \PEArray
+
+2.2. Analyzing design hierarchy..
+Top module:  \PEArray
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module PEArray.
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module PEArray.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\PEArray'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \PEArray..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \PEArray.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\PEArray'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \PEArray..
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module PEArray.
+
+4.9. Finished fast OPT passes. (There is nothing left to do.)
+
+5. Executing MEMORY pass.
+
+5.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+5.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+5.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \PEArray..
+
+5.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \PEArray..
+
+5.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module PEArray.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\PEArray'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \PEArray..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \PEArray.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\PEArray'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \PEArray..
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module PEArray.
+
+6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /mnt/e/openroadflowscripts/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/mnt/e/openroadflowscripts/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+verilog frontend filename /mnt/e/openroadflowscripts/oss-cad-suite/lib/../share/yosys/techmap.v
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `\$connect'.
+Generating RTLIL representation for module `\$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~77 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module PEArray.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\PEArray'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \PEArray..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \PEArray.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\PEArray'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \PEArray..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module PEArray.
+
+8.9. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell DFF_X1 (noninv, pins=4, area=4.52) is a direct match for cell type $_DFF_P_.
+  cell DFFR_X1 (noninv, pins=5, area=5.32) is a direct match for cell type $_DFF_PN0_.
+  cell DFFS_X1 (noninv, pins=5, area=5.32) is a direct match for cell type $_DFF_PN1_.
+  cell DFFRS_X1 (noninv, pins=6, area=6.38) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \DFF_X1 _DFF_P_ (.CK( C), .D( D), .Q( Q), .QN(~Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \DFFR_X1 _DFF_PN0_ (.CK( C), .D( D), .Q( Q), .QN(~Q), .RN( R));
+    \DFFS_X1 _DFF_PN1_ (.CK( C), .D( D), .Q( Q), .QN(~Q), .SN( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \DFFRS_X1 _DFFSR_PNN_ (.CK( C), .D( D), .Q( Q), .QN(~Q), .RN( R), .SN( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+9.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~8 debug messages>
+Mapping DFF cells in module `\PEArray':
+
+10. Executing ABC pass (technology mapping using ABC).
+
+10.1. Extracting gate netlist of module `\PEArray' to `<abc-temp-dir>/input.blif'..
+Don't call ABC as there is nothing to map.
+
+10.1.1. Executed ABC.
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Removing temp directory.
+Removing global temp directory.
+
+11. Printing statistics.
+
+=== PEArray ===
+
+        +----------Local Count, excluding submodules.
+        | 
+   202434 wires
+   205108 wire bits
+   202434 public wires
+   205108 public wire bits
+       12 ports
+     2686 port bits
+   182085 cells
+     1946   AND2_X1
+       28   AND2_X2
+      358   AND3_X1
+        1   AND3_X2
+      117   AND4_X1
+        1   AND4_X2
+        1   AOI211_X2
+     9657   AOI21_X1
+       50   AOI21_X2
+       25   AOI21_X4
+     1691   AOI221_X1
+       60   AOI221_X2
+      269   AOI222_X1
+        2   AOI222_X2
+     5013   AOI22_X1
+       15   AOI22_X2
+        2   AOI22_X4
+    23383   BUF_X1
+       32   BUF_X16
+     6224   BUF_X2
+        1   BUF_X32
+     4054   BUF_X4
+     1045   BUF_X8
+      902   CLKBUF_X1
+       14   CLKBUF_X2
+     1894   CLKBUF_X3
+    10186   DFFR_X1
+        2   DFFR_X2
+      333   DFF_X1
+       93   DFF_X2
+     8350   FA_X1
+     4228   HA_X1
+    14886   INV_X1
+        3   INV_X16
+      372   INV_X2
+       74   INV_X4
+       58   INV_X8
+      576   LOGIC0_X1
+    21634   MUX2_X1
+    18670   NAND2_X1
+       63   NAND2_X2
+       97   NAND2_X4
+     2551   NAND3_X1
+       16   NAND3_X2
+        2   NAND3_X4
+      568   NAND4_X1
+       23   NAND4_X2
+        6   NAND4_X4
+     7936   NOR2_X1
+      127   NOR2_X2
+      129   NOR2_X4
+     2175   NOR3_X1
+       23   NOR3_X2
+        5   NOR3_X4
+      680   NOR4_X1
+       87   NOR4_X2
+       22   NOR4_X4
+    16023   OAI21_X1
+       56   OAI21_X2
+       25   OAI21_X4
+     2684   OAI221_X1
+        8   OAI221_X2
+      301   OAI222_X1
+     4751   OAI22_X1
+        6   OAI22_X2
+       61   OAI33_X1
+     2703   OR2_X1
+       21   OR2_X2
+        6   OR2_X4
+     1142   OR3_X1
+        1   OR3_X2
+       89   OR4_X1
+        1   OR4_X2
+        1   OR4_X4
+     2815   XNOR2_X1
+       59   XNOR2_X2
+      546   XOR2_X1
+       26   XOR2_X2
+
+12. Printing statistics.
+
+=== PEArray ===
+
+        +----------Local Count, excluding submodules.
+        | 
+   202434 wires
+   205108 wire bits
+   202434 public wires
+   205108 public wire bits
+       12 ports
+     2686 port bits
+   182085 cells
+     1946   AND2_X1
+       28   AND2_X2
+      358   AND3_X1
+        1   AND3_X2
+      117   AND4_X1
+        1   AND4_X2
+        1   AOI211_X2
+     9657   AOI21_X1
+       50   AOI21_X2
+       25   AOI21_X4
+     1691   AOI221_X1
+       60   AOI221_X2
+      269   AOI222_X1
+        2   AOI222_X2
+     5013   AOI22_X1
+       15   AOI22_X2
+        2   AOI22_X4
+    23383   BUF_X1
+       32   BUF_X16
+     6224   BUF_X2
+        1   BUF_X32
+     4054   BUF_X4
+     1045   BUF_X8
+      902   CLKBUF_X1
+       14   CLKBUF_X2
+     1894   CLKBUF_X3
+    10186   DFFR_X1
+        2   DFFR_X2
+      333   DFF_X1
+       93   DFF_X2
+     8350   FA_X1
+     4228   HA_X1
+    14886   INV_X1
+        3   INV_X16
+      372   INV_X2
+       74   INV_X4
+       58   INV_X8
+      576   LOGIC0_X1
+    21634   MUX2_X1
+    18670   NAND2_X1
+       63   NAND2_X2
+       97   NAND2_X4
+     2551   NAND3_X1
+       16   NAND3_X2
+        2   NAND3_X4
+      568   NAND4_X1
+       23   NAND4_X2
+        6   NAND4_X4
+     7936   NOR2_X1
+      127   NOR2_X2
+      129   NOR2_X4
+     2175   NOR3_X1
+       23   NOR3_X2
+        5   NOR3_X4
+      680   NOR4_X1
+       87   NOR4_X2
+       22   NOR4_X4
+    16023   OAI21_X1
+       56   OAI21_X2
+       25   OAI21_X4
+     2684   OAI221_X1
+        8   OAI221_X2
+      301   OAI222_X1
+     4751   OAI22_X1
+        6   OAI22_X2
+       61   OAI33_X1
+     2703   OR2_X1
+       21   OR2_X2
+        6   OR2_X4
+     1142   OR3_X1
+        1   OR3_X2
+       89   OR4_X1
+        1   OR4_X2
+        1   OR4_X4
+     2815   XNOR2_X1
+       59   XNOR2_X2
+      546   XOR2_X1
+       26   XOR2_X2
+
+13. Executing Verilog backend.
+
+13.1. Executing BMUXMAP pass.
+
+13.2. Executing DEMUXMAP pass.
+Dumping module `\PEArray'.

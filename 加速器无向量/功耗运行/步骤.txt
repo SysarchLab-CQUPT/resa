@@ -1,0 +1,23 @@
+# 1. 进入 WSL
+wsl
+
+# 2. 进入项目目录
+cd /mnt/c/Users/jiangjiaxin/Desktop/加速器无向量
+
+# 3. 启动 Docker 容器（进入 bash，不是 OpenROAD）
+docker run -it --rm \
+  -v $(pwd):/workspace \
+  -w /workspace \
+  --entrypoint /bin/bash \
+  openroad-avx2:latest
+
+# 直接运行你之前成功的脚本
+openroad power_saif_final.tcl
+
+python3 calculate_total_area.py  # 面积分析
+
+各位评委好，我对PEArray设计进行了完整的功耗和面积分析。主要工作是：使用OpenROAD工具链，基于标准单元库，通过SAIF文件反标实际工作负载，得到了准确的功耗和面积数据。"
+
+. 流程工具
+
+    "我使用开源EDA工具链：Yosys进行逻辑综合，OpenROAD进行功耗分析。工艺库采用NangateOpenCellLibrary 45nm工艺。"
